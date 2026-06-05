@@ -10,7 +10,6 @@ VigiLink AI is a production-ready, full-stack Continuous Vendor Monitoring (CVM)
 
 ---
 
-
 ## 🏗️ Core System Architecture & Data Flow
 
 Below is the complete end-to-end architecture mapping out the reactive frontend state, the asynchronous Python backend, and the decoupled external OSINT layers.
@@ -53,10 +52,11 @@ graph TD
     H -->|14. UI State Resolve| F
     F -->|15. Unpack JSON Model| P[CyberReportCard Boardroom Report]
     P -->|16. CSS Print Query Override| Q[A4 Executive PDF Export]
+```
 
+---
 
-
-    ---
+## ⚡ Key Architectural Features
 
 ## ⚡ Key Architectural Features
 
