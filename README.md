@@ -12,7 +12,17 @@
 
 </p>
 
+<p align="center">
+  <img src="./dashboard-overview.png" width="100%">
+</p>
+
+<p align="center">
+  <b>Production-Grade Third-Party Risk Management Platform Powered by OSINT Intelligence and Air-Gapped AI</b>
+</p>
+
 ---
+
+
 
 ## 📖 Overview
 
@@ -30,6 +40,121 @@ Traditional vendor assessments rely on annual questionnaires that quickly become
 The platform continuously evaluates vendor security posture and transforms raw technical findings into actionable business intelligence.
 
 ---
+
+
+# 🎯 Product Walkthrough
+
+Explore the major workflows and intelligence capabilities available within VigiLink AI.
+
+---
+
+## 🌍 Global Command Center
+
+Real-time visibility into vendor exposure, risk velocity, security posture, and operational threat intelligence.
+
+<p align="center">
+  <img src="./dashboard-overview.png" width="100%">
+</p>
+
+---
+
+## 📋 Vendor Portfolio Management
+
+Track, categorize, and continuously monitor suppliers through a centralized portfolio dashboard.
+
+<p align="center">
+  <img src="./vendor-portfolio.png" width="100%">
+</p>
+
+### Key Features
+
+- Tier-based vendor classification
+- Continuous monitoring status
+- Risk score tracking
+- Issue visibility
+- CSV exports
+- Boardroom reporting
+
+---
+
+## 🔀 Deep Analysis Queue
+
+Batch multiple vendors and execute large-scale asynchronous assessments.
+
+<p align="center">
+  <img src="./analysis-queue.png" width="75%">
+</p>
+
+### Capabilities
+
+- Queue orchestration
+- Vendor prioritization
+- Batch execution
+- Drag-and-drop workflows
+
+---
+
+## 📡 Live OSINT Recon Telemetry
+
+Watch reconnaissance engines execute in real time through the integrated Hacker Terminal.
+
+<p align="center">
+  <img src="./score.png" width="75%">
+</p>
+
+Live intelligence includes:
+
+- DNS reconnaissance
+- Subdomain discovery
+- Open port detection
+- HIBP breach intelligence
+- Financial risk monitoring
+- AI processing telemetry
+
+---
+
+## 🚨 Alerts & Triage Center
+
+Security findings automatically generate actionable analyst alerts.
+
+<p align="center">
+  <img src="./alerts-triage.png" width="100%">
+</p>
+
+### Alert Classification
+
+| Severity | Response |
+|-----------|-----------|
+| Critical | Immediate Action |
+| High | Escalation |
+| Medium | Investigation |
+| Low | Monitoring |
+
+---
+
+## ⚙️ Risk Weighting Engine
+
+Customize how vendor risk scores are calculated across multiple intelligence domains.
+
+<p align="center">
+  <img src="./settings-engine.png" width="100%">
+</p>
+
+### Adjustable Risk Categories
+
+- Cyber Infrastructure
+- Identity & Data Leaks
+- Financial Health
+- Compliance & Legal
+
+### Dynamic Threshold Controls
+
+- Critical Alert Trigger
+- Warning Alert Trigger
+- Global Risk Scoring Logic
+
+---
+
 
 # 🏗️ System Architecture
 
