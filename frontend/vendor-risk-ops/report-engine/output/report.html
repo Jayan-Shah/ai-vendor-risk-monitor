@@ -1,0 +1,1159 @@
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="utf-8">
+
+<title>Vendor Cyber Risk Report</title>
+
+<style>
+/* ---------- PAGE SETTINGS ---------- */
+
+@page {
+size: A4;
+margin: 20mm 18mm;
+}
+
+body{
+font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Arial, sans-serif;
+background:#f5f7fb;
+color:#0f172a;
+line-height:1.6;
+font-size:14px;
+margin:0;
+}
+
+
+section{
+margin-bottom:60px;
+}
+
+/* ---------- COVER PAGE ---------- */
+
+.cover{
+display:flex;
+justify-content:center;
+align-items:center;
+height:90vh;
+text-align:center;
+}
+
+.cover-container{
+max-width:700px;
+}
+
+.cover-title{
+font-size:42px;
+font-weight:700;
+letter-spacing:-0.5px;
+margin-bottom:14px;
+}
+
+.cover-subtitle{
+font-size:16px;
+color:#64748b;
+margin-bottom:30px;
+}
+
+.cover-meta{
+font-size:13px;
+color:#94a3b8;
+}
+
+
+
+/* ---------- SECTION HEADERS ---------- */
+
+.section-title{
+font-size:24px;
+font-weight:600;
+margin-bottom:22px;
+margin-top:10px;
+border-bottom:1px solid #e5e7eb;
+padding-bottom:10px;
+}
+
+
+
+/* ---------- PAGE BREAK ---------- */
+
+.page-break{
+page-break-after:always;
+margin-top:40px;
+}
+
+
+
+/* ---------- KPI GRID ---------- */
+.kpi-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:24px;
+margin-bottom:40px;
+margin-top:10px;
+}
+
+.kpi-card{
+background:white;
+border-radius:12px;
+padding:28px;
+border:1px solid #e5e7eb;
+box-shadow:0 10px 25px rgba(0,0,0,0.04);
+text-align:center;
+}
+
+.kpi-label{
+font-size:13px;
+color:#64748b;
+margin-bottom:6px;
+}
+
+.kpi-value{
+font-size:40px;
+font-weight:700;
+letter-spacing:-1px;
+}
+
+.kpi-value.danger{
+color:#dc2626;
+}
+
+
+
+/* ---------- CHARTS ---------- */
+
+.chart-container{
+background:#ffffff;
+border-radius:12px;
+padding:30px;
+border:1px solid #e5e7eb;
+box-shadow:0 6px 18px rgba(0,0,0,0.05);
+margin-top:20px;
+display:flex;
+flex-direction:column;
+align-items:center;
+}
+
+.chart-container h3{
+font-size:16px;
+margin-bottom:16px;
+color:#334155;
+}
+
+canvas{
+width:100% !important;
+height:280px !important;
+}
+
+
+
+/* ---------- TABLES ---------- */
+
+.data-table{
+width:100%;
+border-collapse:collapse;
+background:white;
+border-radius:12px;
+overflow:hidden;
+border:1px solid #e5e7eb;
+margin-top:20px;
+}
+
+.data-table thead{
+background:#0f172a;
+color:white;
+}
+
+.data-table th{
+padding:16px 18px;
+font-size:13px;
+letter-spacing:0.3px;
+}
+
+.data-table td{
+padding:16px 18px;
+border-bottom:1px solid #f1f5f9;
+font-size:14px;
+}
+
+.data-table tr:nth-child(even){
+background:#fafafa;
+}
+
+
+
+.vendor-name{
+font-weight:600;
+color:#0f172a;
+}
+
+
+
+/* ---------- BADGES ---------- */
+
+.badge{
+display:inline-block;
+padding:4px 10px;
+border-radius:6px;
+font-size:11px;
+font-weight:600;
+}
+
+.badge-critical{
+background:#fee2e2;
+color:#b91c1c;
+}
+
+.badge-high{
+background:#ffedd5;
+color:#c2410c;
+}
+
+.badge-medium{
+background:#fef9c3;
+color:#a16207;
+}
+
+.badge-low{
+background:#dcfce7;
+color:#166534;
+}
+
+.badge-good{
+background:#e0f2fe;
+color:#0369a1;
+}
+
+
+
+/* ---------- LISTS ---------- */
+
+.dependency-list{
+padding-left:20px;
+margin-top:12px;
+}
+
+.dependency-list li{
+margin-bottom:8px;
+color:#334155;
+}
+
+
+
+/* ---------- FOOTER ---------- */
+
+.footer{
+position:fixed;
+bottom:0;
+left:0;
+right:0;
+text-align:center;
+font-size:11px;
+color:#94a3b8;
+padding-bottom:6px;
+}
+
+
+
+/* ---------- SMALL IMPROVEMENTS ---------- */
+
+h3{
+font-size:17px;
+margin-bottom:12px;
+}
+
+p{
+color:#64748b;
+}
+
+table{
+margin-top:14px;
+}
+
+
+</style>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+
+<body>
+
+
+<!-- COVER PAGE -->
+
+<section class="cover">
+
+<div class="cover-container">
+
+<h1 class="cover-title">
+Vendor Supply Chain Cyber Risk Report
+</h1>
+
+<p class="cover-subtitle">
+Confidential Security Intelligence Report
+</p>
+
+<p class="cover-meta">
+Generated Wed Mar 04 2026
+</p>
+
+</div>
+
+</section>
+
+
+<div class="page-break"></div>
+
+
+
+<!-- EXECUTIVE SUMMARY -->
+
+<section>
+
+<h2 class="section-title">
+Executive Risk Overview
+</h2>
+
+<div class="kpi-grid">
+
+<div class="kpi-card">
+<p class="kpi-label">Global Risk Score</p>
+<p class="kpi-value danger">72</p>
+</div>
+
+<div class="kpi-card">
+<p class="kpi-label">Total Vendors</p>
+<p class="kpi-value">342</p>
+</div>
+
+<div class="kpi-card">
+<p class="kpi-label">Critical Alerts</p>
+<p class="kpi-value danger">8</p>
+</div>
+
+</div>
+
+
+<div class="chart-container">
+
+<h3>Portfolio Risk Distribution</h3>
+
+<canvas id="riskChart"></canvas>
+
+</div>
+
+</section>
+
+
+<div class="page-break"></div>
+
+
+
+<!-- EXECUTIVE HEATMAP -->
+
+<section>
+
+<h2 class="section-title">
+Executive Vendor Risk Heatmap
+</h2>
+
+<div class="chart-container">
+
+<canvas id="heatmapChart"></canvas>
+
+</div>
+
+</section>
+
+
+<div class="page-break"></div>
+
+
+
+<!-- VENDOR RANKING -->
+
+<section>
+
+<h2 class="section-title">
+Vendor Risk Ranking
+</h2>
+
+<table class="data-table">
+
+<thead>
+
+<tr>
+<th>Vendor</th>
+<th>Domain</th>
+<th>Tier</th>
+<th>Score</th>
+<th>Trend</th>
+<th>Status</th>
+</tr>
+
+</thead>
+
+<tbody>
+
+
+<tr>
+
+<td class="vendor-name">DataSync Corp</td>
+
+<td>datasync.io</td>
+
+<td>Tier 1</td>
+
+<td>42</td>
+
+<td>-12</td>
+
+<td>
+<span class="badge badge-critical">
+Critical
+</span>
+</td>
+
+</tr>
+
+<tr>
+
+<td class="vendor-name">Global Payroll</td>
+
+<td>globalpay.com</td>
+
+<td>Tier 1</td>
+
+<td>55</td>
+
+<td>-5</td>
+
+<td>
+<span class="badge badge-high">
+High
+</span>
+</td>
+
+</tr>
+
+<tr>
+
+<td class="vendor-name">Acme HVAC</td>
+
+<td>acme-hvac.net</td>
+
+<td>Tier 3</td>
+
+<td>58</td>
+
+<td>-2</td>
+
+<td>
+<span class="badge badge-high">
+High
+</span>
+</td>
+
+</tr>
+
+<tr>
+
+<td class="vendor-name">Stripe</td>
+
+<td>stripe.com</td>
+
+<td>Tier 1</td>
+
+<td>94</td>
+
+<td>+1</td>
+
+<td>
+<span class="badge badge-good">
+Good
+</span>
+</td>
+
+</tr>
+
+<tr>
+
+<td class="vendor-name">AWS Cloud</td>
+
+<td>aws.amazon.com</td>
+
+<td>Tier 1</td>
+
+<td>88</td>
+
+<td>0</td>
+
+<td>
+<span class="badge badge-good">
+Good
+</span>
+</td>
+
+</tr>
+
+<tr>
+
+<td class="vendor-name">Zendesk</td>
+
+<td>zendesk.com</td>
+
+<td>Tier 2</td>
+
+<td>76</td>
+
+<td>+4</td>
+
+<td>
+<span class="badge badge-medium">
+Medium
+</span>
+</td>
+
+</tr>
+
+<tr>
+
+<td class="vendor-name">Mailchimp</td>
+
+<td>mailchimp.com</td>
+
+<td>Tier 2</td>
+
+<td>81</td>
+
+<td>+2</td>
+
+<td>
+<span class="badge badge-good">
+Good
+</span>
+</td>
+
+</tr>
+
+<tr>
+
+<td class="vendor-name">Okta</td>
+
+<td>okta.com</td>
+
+<td>Tier 1</td>
+
+<td>92</td>
+
+<td>0</td>
+
+<td>
+<span class="badge badge-good">
+Good
+</span>
+</td>
+
+</tr>
+
+
+</tbody>
+
+</table>
+
+</section>
+
+
+<div class="page-break"></div>
+
+
+
+<!-- SECURITY FINDINGS -->
+
+<section>
+
+<h2 class="section-title">
+Security Findings
+</h2>
+
+<table class="data-table">
+
+<thead>
+
+<tr>
+<th>Severity</th>
+<th>Category</th>
+<th>Finding</th>
+<th>Status</th>
+<th>Age</th>
+</tr>
+
+</thead>
+
+<tbody>
+
+
+<tr>
+
+<td>
+<span class="badge badge-critical">
+Critical
+</span>
+</td>
+
+<td>Cyber</td>
+
+<td>CVE-2023-44487 (HTTP/2 Rapid Reset)</td>
+
+<td>Open</td>
+
+<td>12 days</td>
+
+</tr>
+
+<tr>
+
+<td>
+<span class="badge badge-high">
+High
+</span>
+</td>
+
+<td>Identity</td>
+
+<td>3 Employee credentials found in Dark Web dump</td>
+
+<td>Investigating</td>
+
+<td>2 days</td>
+
+</tr>
+
+<tr>
+
+<td>
+<span class="badge badge-medium">
+Medium
+</span>
+</td>
+
+<td>Compliance</td>
+
+<td>Missing DMARC Reject Policy on primary domain</td>
+
+<td>Open</td>
+
+<td>45 days</td>
+
+</tr>
+
+<tr>
+
+<td>
+<span class="badge badge-medium">
+Medium
+</span>
+</td>
+
+<td>Cyber</td>
+
+<td>Exposed SSH Port (22) on sub.datasync.io</td>
+
+<td>Open</td>
+
+<td>8 days</td>
+
+</tr>
+
+
+</tbody>
+
+</table>
+
+</section>
+
+
+<div class="page-break"></div>
+
+
+
+<!-- COMPLIANCE MATRIX -->
+
+<section>
+
+<h2 class="section-title">
+Compliance Framework Coverage
+</h2>
+
+<table class="data-table">
+
+<thead>
+
+<tr>
+<th>Framework</th>
+<th>Coverage</th>
+<th>Gaps</th>
+<th>Status</th>
+</tr>
+
+</thead>
+
+<tbody>
+
+
+<tr>
+
+<td>SOC 2 Type II</td>
+
+<td>85%</td>
+
+<td>2</td>
+
+<td>Healthy</td>
+
+</tr>
+
+<tr>
+
+<td>ISO 27001</td>
+
+<td>62%</td>
+
+<td>5</td>
+
+<td>Warning</td>
+
+</tr>
+
+<tr>
+
+<td>NIST CSF</td>
+
+<td>94%</td>
+
+<td>1</td>
+
+<td>Healthy</td>
+
+</tr>
+
+<tr>
+
+<td>GDPR / Privacy</td>
+
+<td>40%</td>
+
+<td>8</td>
+
+<td>Critical</td>
+
+</tr>
+
+
+</tbody>
+
+</table>
+
+</section>
+
+
+<div class="page-break"></div>
+
+
+
+<!-- ALERT TIMELINE -->
+
+<section>
+
+<h2 class="section-title">
+Security Alert Timeline
+</h2>
+
+<table class="data-table">
+
+<thead>
+
+<tr>
+<th>ID</th>
+<th>Vendor</th>
+<th>Alert</th>
+<th>Severity</th>
+<th>Status</th>
+<th>Time</th>
+</tr>
+
+</thead>
+
+<tbody>
+
+
+<tr>
+
+<td>AL-1042</td>
+
+<td>DataSync Corp</td>
+
+<td>CVE-2023-44487 (HTTP/2 Rapid Reset)</td>
+
+<td>Critical</td>
+
+<td>Open</td>
+
+<td>2 hours ago</td>
+
+</tr>
+
+<tr>
+
+<td>AL-1043</td>
+
+<td>Global Payroll</td>
+
+<td>Exposed RDP Port (3389)</td>
+
+<td>High</td>
+
+<td>Open</td>
+
+<td>5 hours ago</td>
+
+</tr>
+
+<tr>
+
+<td>AL-1038</td>
+
+<td>Acme HVAC</td>
+
+<td>3 Employee credentials leaked on Dark Web</td>
+
+<td>High</td>
+
+<td>Investigating</td>
+
+<td>1 day ago</td>
+
+</tr>
+
+<tr>
+
+<td>AL-1039</td>
+
+<td>DataSync Corp</td>
+
+<td>Missing Security Headers (HSTS)</td>
+
+<td>Medium</td>
+
+<td>Investigating</td>
+
+<td>2 days ago</td>
+
+</tr>
+
+<tr>
+
+<td>AL-1035</td>
+
+<td>Stripe</td>
+
+<td>Missing DMARC Reject Policy</td>
+
+<td>Low</td>
+
+<td>Resolved</td>
+
+<td>3 days ago</td>
+
+</tr>
+
+<tr>
+
+<td>AL-1031</td>
+
+<td>Zendesk</td>
+
+<td>Expired SSL Certificate on sub-domain</td>
+
+<td>Medium</td>
+
+<td>Resolved</td>
+
+<td>1 week ago</td>
+
+</tr>
+
+
+</tbody>
+
+</table>
+
+</section>
+
+
+<div class="page-break"></div>
+
+
+
+<!-- RISK TREND -->
+
+<section>
+
+<h2 class="section-title">
+Vendor Risk Timeline Analysis
+</h2>
+
+<div class="chart-container">
+
+<canvas id="trendChart"></canvas>
+
+</div>
+
+
+<div class="chart-container">
+
+<h3>Security Category Breakdown</h3>
+
+<canvas id="radarChart"></canvas>
+
+</div>
+
+</section>
+
+
+<div class="page-break"></div>
+
+
+
+<!-- ATTACK SURFACE -->
+
+<section>
+
+<h2 class="section-title">
+External Attack Surface Intelligence
+</h2>
+
+<div class="kpi-grid">
+
+<div class="kpi-card">
+<p class="kpi-label">Domains</p>
+<p class="kpi-value">14</p>
+</div>
+
+<div class="kpi-card">
+<p class="kpi-label">Subdomains</p>
+<p class="kpi-value">88</p>
+</div>
+
+<div class="kpi-card">
+<p class="kpi-label">Open Ports</p>
+<p class="kpi-value">11</p>
+</div>
+
+<div class="kpi-card">
+<p class="kpi-label">Certificates</p>
+<p class="kpi-value">21</p>
+</div>
+
+<div class="kpi-card">
+<p class="kpi-label">Cloud Buckets</p>
+<p class="kpi-value">3</p>
+</div>
+
+<div class="kpi-card">
+<p class="kpi-label">Public APIs</p>
+<p class="kpi-value">9</p>
+</div>
+
+</div>
+
+</section>
+
+
+<div class="page-break"></div>
+
+
+
+<!-- DARK WEB -->
+
+<section>
+
+<h2 class="section-title">
+Dark Web Exposure Intelligence
+</h2>
+
+<table class="data-table">
+
+<thead>
+
+<tr>
+<th>Source</th>
+<th>Exposure</th>
+<th>Vendor</th>
+<th>Status</th>
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+<td>BreachForum</td>
+<td>Credential Leak</td>
+<td>DataSync Corp</td>
+<td><span class="badge badge-critical">Active</span></td>
+</tr>
+
+<tr>
+<td>Genesis Market</td>
+<td>Session Cookies</td>
+<td>Global Payroll</td>
+<td><span class="badge badge-high">Investigating</span></td>
+</tr>
+
+<tr>
+<td>Telegram Logs</td>
+<td>Email + Password</td>
+<td>Acme HVAC</td>
+<td><span class="badge badge-high">Active</span></td>
+</tr>
+
+</tbody>
+
+</table>
+
+</section>
+
+
+<div class="page-break"></div>
+
+
+
+<!-- REMEDIATION -->
+
+<section>
+
+<h2 class="section-title">
+Security Remediation Roadmap
+</h2>
+
+<table class="data-table">
+
+<thead>
+
+<tr>
+<th>Priority</th>
+<th>Action</th>
+<th>Vendor</th>
+<th>SLA</th>
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+<td>Critical</td>
+<td>Patch CVE-2023-44487 firewall vulnerability</td>
+<td>DataSync Corp</td>
+<td>24 Hours</td>
+</tr>
+
+<tr>
+<td>High</td>
+<td>Disable exposed RDP port</td>
+<td>Global Payroll</td>
+<td>48 Hours</td>
+</tr>
+
+<tr>
+<td>Medium</td>
+<td>Implement DMARC reject policy</td>
+<td>Stripe</td>
+<td>7 Days</td>
+</tr>
+
+</tbody>
+
+</table>
+
+</section>
+
+
+<div class="page-break"></div>
+
+
+
+<!-- AUDIT LOGS -->
+
+<section>
+
+<h2 class="section-title">
+Audit Activity Logs
+</h2>
+
+<table class="data-table">
+
+<thead>
+
+<tr>
+<th>Action</th>
+<th>User</th>
+<th>Time</th>
+</tr>
+
+</thead>
+
+<tbody>
+
+
+<tr>
+
+<td>Dismissed Alert AL-1035</td>
+
+<td>JAYAN SHAH</td>
+
+<td>1 hour ago</td>
+
+</tr>
+
+<tr>
+
+<td>Generated Board Report Q1</td>
+
+<td>ANALYST_ALPHA</td>
+
+<td>4 hours ago</td>
+
+</tr>
+
+<tr>
+
+<td>Changed Vendor Weighting (Cyber: 40%)</td>
+
+<td>JAYAN SHAH</td>
+
+<td>Yesterday</td>
+
+</tr>
+
+
+</tbody>
+
+</table>
+
+</section>
+
+
+
+<script src="./charts.js"></script>
+
+</body>
+
+</html>
+

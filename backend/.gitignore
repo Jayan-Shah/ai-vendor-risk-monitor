@@ -1,0 +1,18 @@
+venv/
+__pycache__/
+*.pyc
+.env
+vigilink.db
+# Python environments
+venv/
+env/
+__pycache__/
+*.pyc
+
+# Secrets (CRITICAL)
+.env
+.env.*
+
+# Databases
+*.db
+*.sqlite3

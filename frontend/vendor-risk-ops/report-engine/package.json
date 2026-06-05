@@ -1,0 +1,23 @@
+{
+  "name": "report-engine",
+  "version": "1.0.0",
+  "description": "Cyber Vendor Monitoring Report Generator",
+  "type": "module",
+  "main": "generateReport.js",
+  "scripts": {
+    "generate": "node generateReport.js"
+  },
+  "keywords": [
+    "cybersecurity",
+    "vendor-risk",
+    "report-generator",
+    "puppeteer",
+    "saas"
+  ],
+  "author": "Jayan Shah",
+  "license": "ISC",
+  "dependencies": {
+    "fs-extra": "^11.3.4",
+    "puppeteer": "^24.37.5"
+  }
+}
